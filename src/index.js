@@ -1,18 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './Header'
+import Footer from './Footer'
+
+import MainContent from './MainContent'
 
 
-const page = (
-  <div>
-    <h1>리액트로 만든 나의 멋진 웹사이트 </h1>
-    <h3>이유는 내가 리액트를 좋아 하니까</h3>
-    <ol>
-      <li>composable</li>
-      <li>declarative</li>
-      <li>hireable skill</li>
-      <li>actively</li>
-    </ol>
-  </div>
-)
+function Page() {
+    return (
+    <div>
+        <Header/>
 
-ReactDOM.render(page, document.getElementById("root"))
+        <MainContent/>
+
+        <Footer/>
+
+    </div>
+    )
+}
+
+ReactDOM.render(<Page/>, document.getElementById("root"))
