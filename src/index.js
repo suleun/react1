@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const page = (
+  <div>
+    <h1>리액트로 만든 나의 멋진 웹사이트 </h1>
+    <h3>이유는 내가 리액트를 좋아 하니까</h3>
+    <ol>
+      <li>composable</li>
+      <li>declarative</li>
+      <li>hireable skill</li>
+      <li>actively</li>
+    </ol>
+  </div>
+)
+
+ReactDOM.render(page, document.getElementById("root"))
